@@ -1,0 +1,43 @@
+.images-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.app-container{
+    background-color: #130a26;
+
+}
+.image{
+    overflow: hidden;
+    margin: 20px;
+    color: #ffffff;
+    background-color: rgb(37, 30, 53);
+    border-radius: 5px;
+}
+
+.episode-image{
+    width: 100%;
+    max-height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.image .episode-image{  
+    transition: 0.5s all ease-in-out;
+}
+
+.image:hover .episode-image{  
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.heading{
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0px 15px 10px;
+
+    width: 220px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+}
