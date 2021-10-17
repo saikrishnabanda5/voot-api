@@ -1,7 +1,13 @@
-.images-container{
-    display:flex;
-    flex-wrap: wrap;
+.app-container{
+    height: 100vh;
+    padding: 20px 0px 0px 70px;
 }
+
+.images-container{
+    /* margin-left: 0px; */
+    
+}
+
 .app-container{
     background-color: #130a26;
 
@@ -12,11 +18,11 @@
     color: #ffffff;
     background-color: rgb(37, 30, 53);
     border-radius: 5px;
+    max-width: 250px;
 }
 
 .episode-image{
     width: 100%;
-    max-height: 150px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -30,14 +36,43 @@
     cursor: pointer;
 }
 
+.image:hover{  
+    background-image: linear-gradient(to bottom right, #4d1596 70%, #8a30f0 50%);
+}
+
+.image-container:hover .image {
+    transform: translateX(-25%);
+ }
+
 .heading{
     text-align: left;
     font-weight: bold;
-    margin: 10px 0px 15px 10px;
-
-    width: 220px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-
+    margin: 10px 10px 15px 10px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+/* .swiper-slide {
+    width:3000px;
+    height:300px;
+    this one holds the dimension of each slides and can be changed according to the user wish
+    }
+
+    
+.swiper {
+    width: 10%;
+    height: 1000px;
+  } */
+
+  .main-heading{
+      color: #ffffff;
+  }
+
+  
+
+  .swiper-slide-prev::before {
+      background-color: orange;
+      background-image: url("https://res.cloudinary.com/dfxicv9iv/image/upload/v1634476903/white-arrow-png-41944_jfdhsb.png");
+  }
