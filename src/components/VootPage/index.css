@@ -54,23 +54,10 @@
     white-space: nowrap;
 }
 
-/* .swiper-slide {
-    width:3000px;
-    height:300px;
-    this one holds the dimension of each slides and can be changed according to the user wish
-    }
-
-    
-.swiper {
-    width: 10%;
-    height: 1000px;
-  } */
-
   .main-heading{
       color: #ffffff;
   }
 
-  
 
   .swiper-slide-prev::before {
       background-color: orange;

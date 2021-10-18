@@ -4,9 +4,6 @@ import './index.css'
 import 'swiper/swiper-bundle.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore,{Navigation,Autoplay} from 'swiper'
-// import 'swiper/css/swiper.css'
-// import "swiper/css/navigation"
-
 
 SwiperCore.use([Navigation,Autoplay])
 
@@ -15,7 +12,7 @@ const dummyData = [
         mId:0,
         imgURL:  "https://res.cloudinary.com/dfxicv9iv/image/upload/v1634473161/images_i5e0kc.jpg",
         episodeNo:1,
-        title:"Eplid d dfg dg  dfgfggffhfhfhdfhdfdfhdfhfdhhdg "
+        title:"Test title test title test "
     },
     {
         mId:1,
@@ -72,15 +69,15 @@ function VootPage() {
 
     const getVootAPIRequest = async ()=>{
 
-    await axios.get('https://tvapiv2.voot.com/wsv_1_0/episode/list.json?%20tvSeriesId=361251&from=1&to=20&sortId=mostPopular')
-    .then(response =>{
-        console.log(response)
-        setdata(response.data.assets)
-    })
-    .catch(error =>{
-        console.log(error)
-    })
-}
+        await axios.get('https://tvapiv2.voot.com/wsv_1_0/episode/list.json?%20tvSeriesId=361251&from=1&to=20&sortId=mostPopular')
+        .then(response =>{
+            console.log(response)
+            setdata(response.data.assets)
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
 
         const renderImages = ()=>{
              return dummyData.map(image =>
